@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cloak</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" >
+    <link type="text/css" rel="stylesheet" href="css/about.css" >
+    <link rel="icon" type="image/gif/png" href="https://res.cloudinary.com/friilancer/image/upload/v1588524936/Cloak/fkx6gkgi6pyqqmpekznh.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="https://res.cloudinary.com/friilancer/image/upload/v1588524936/Cloak/fkx6gkgi6pyqqmpekznh.png"></div>
+        <div class="nav">
+            <a  href="index.html">Home</a>
+            <a  href="services.html">Services</a>
+            <a class="activeLink" href="about.html">About</a>
+        </div>
+        <div class="contactUs"><a id="formControlOpen">Contact Us</a></div>
+    </header>
+
+    <main>
+        <div class="aboutJumbotron">
+            <div class="aboutJumbotronText">
+                <h1>About Us</h1>
+                <div>Adding value to companies by designing and building effective web applications</div>
+            </div>
+            <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524933/Cloak/syfhczo2mxcl0bmrgodf.jpg">
+        </div>
+
+        <div class="coloured">
+            <h2>All about Team Cloak</h2>
+            <div class="lineAfter2"></div>
+        </div>
+        <article class="aboutArticle">
+            <p>
+                The Cloak team is driven towards meeting the expectations of its
+                clientele by building innovative solutions. The team is well versed in 
+                creating unique applications to suit the demands while taking into consideration
+                best practices. Agile software practices is also a core principle of the team's build
+                process.
+            </p>
+
+            <div>
+                <h4>You First!</h4>
+                <div class="lineAfter"></div>
+                <p>
+                    At Cloak, we  pride ourselves in building good, long-term, working relationships
+                    with each of our client. Since client satisfaction is one of our priorities,
+                    it is necessary that there is understanding from both sides. We also love to
+                    keep our clients very much in the loop.
+                </p>
+            </div>
+
+            <div>
+                <h4>Long Term</h4>
+                <div class="lineAfter"></div>
+                <p>
+                    We are very interested in being part of long term projects,
+                    helping with building, maintaining and continuously improving such applications.
+                </p>
+            </div>
+        </article>
+        <div class="articleSkew"></div>
+        <div class="crew">
+                <article>
+                    <h1>The Creative crew behind Cloak </h1>
+                    <div class="lineAfter2"></div>
+                    <h4>Who are we</h4>
+                    <div class="lineAfter"></div>
+                    <p>
+                        We are a team of creatively diverse, driven, and innovative individuals.
+                    </p>
+                    <h4>Our Mission</h4>
+                    <div class="lineAfter"></div>
+                    <p>
+                        Our creativity has always helped our clients succeed and we're in a unique
+                        position to inspire growth for our clients today.
+                    </p>
+                </article>
+                <div class="teamDisplay">
+                    <div class="memberTab">
+                        <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524934/Cloak/al8llr295whokwdljfeq.jpg">
+                        <div class="memberInfo">
+                            <span class="name">Aniedi</span>
+                            <span class="job">Web Developer</span>                            
+                        </div>
+                    </div>
+                    <div class="memberTab">
+                        <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524935/Cloak/tpfg44xlkytrdkvhh0ns.jpg">
+                        <div class="memberInfo">
+                            <span class="name">Trust</span>
+                            <span class="job">Digital Marketer</span>
+                        </div>
+                    </div>
+                    <div class="memberTab">
+                        <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524938/Cloak/bd673merd0snnsthv4v4.jpg">
+                        <div class="memberInfo">
+                            <span class="name">Idongesit</span>
+                            <span class="job">Machine Learning Engineer</span>
+                        </div>
+                    </div>
+                    <div class="memberTab">
+                        <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524935/Cloak/hb8z47nnr0vtlwnzshim.jpg">
+                        <div class="memberInfo">
+                            <span class="name">Wisdom</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="memberTab">
+                        <img src="https://res.cloudinary.com/friilancer/image/upload/v1588524935/Cloak/dqubofyjietsoijmqcpm.jpg">
+                        <div class="memberInfo">
+                            <span class="name">Nsikan</span>
+                            <span class="job">UI/UX Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="formContainer" class="formContainer hide">
+                <form class="form">
+                    <div class="formHeader">
+                        <h2>Contact us</h2>
+                        <div id="formControlClose"><i class="fa fa-times"></i></div>
+                    </div>
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="Name of individual or company" type="text" name="name" minlength="6" maxlength="30" required><br>
+       
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Email" type="email" name="email" minlength="6" maxlength="25" required><br>
+       
+                    <label for="message">Message</label>
+                    <textarea id="textarea" placeholder="Message" name="message" minlength="6" maxlength="60" required></textarea><br>
+       
+                    <button id="submit">Send</button>
+                    
+                </form>
+                <div id="formText" class="formText hide"></div>
+            </div>
+    </main>
+
+    <footer>
+        TEAM CLOAK &copy; 2020
+    </footer>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

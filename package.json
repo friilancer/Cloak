@@ -1,0 +1,20 @@
+{
+  "name": "Cloak",
+  "version": "1.0.0",
+  "description": "Cloak Website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Cloak NG",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "googleapis": "^50.0.0",
+    "nodemailer": "^6.4.6"
+  }
+}

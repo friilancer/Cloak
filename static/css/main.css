@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    font-family: 'Oswald', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    color: black;   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    background: #00A0C6;  
+}
+
+header a{
+    color: white;
+}
+
+.logo img{
+    display: grid;
+    justify-self: start;
+    height: 30px;
+    width: 50px; 
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.contactUs{
+    display: grid;
+    justify-items: end;
+}
+
+.contactUs a{
+    border: 1px solid #010f3b ;
+    background:  rgb(1, 15, 59);
+    padding: 5px 10px;
+}
+.activeLink{
+    color:  rgb(1, 15, 59);
+}
+
+.jumbotron, .jumbotron2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.jumbotron, .processMain, .processHeader{
+    background: #cccccc;
+}
+.jumbotron2{
+    background: white;
+}
+
+.jumboImg, .jumboImg2{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+.jumboImg{
+    justify-self: start;
+}
+
+.jumboImg2{
+    justify-self: end;
+}
+
+.jumboContent, .jumboContent2{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.jumboContent{
+    justify-items: end;
+}
+
+.jumboContent2{
+    justify-items: start;
+}
+
+.jumboContent p, .jumboContent2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.jumboContent span{
+    display: block;
+}
+
+.jumboContent a{
+    font-size: 18px;
+    border: 1px solid #00A0C6;
+    padding: 5px 15px;
+    font-weight: normal;
+    margin-top:5px;
+}
+
+.knowHow, .processMain{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 15vw;
+}
+
+.knowHow{
+    background: white;
+}
+
+.knowHowTab, .processTab{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    row-gap: 0;
+    text-align: center;
+}
+
+.knowHowTab{
+    box-shadow: 0 2px 10px #c4c4c4;
+    width: 160px;
+    height: 220px;
+    padding: 10px 0;
+}
+
+.knowHowTab img, .processTab img{
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+}
+
+#reducedImg{
+    padding:15px;
+}
+
+.processHeader{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+}
+
+#landscapeImg{
+    padding: 8px 0;
+}
+
+#potraitImg{
+    padding: 0 8px;
+}
+
+.jumboSkew{
+    display: none;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    position: absolute;
+    top: 10%;
+    width:100%;
+}
+
+.hide{
+    display: none;
+}
+
+.disable{
+    overflow-y: hidden;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 400px;
+    background: white;
+    padding: 0 20px 10px;
+}
+
+.form input, textarea{
+    padding: 9px;
+}
+
+.formHeader{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.formHeader div{
+    justify-self: end;
+    font-size: 20px;
+}
+
+.fa-times{
+    cursor: pointer;
+}
+
+textarea{
+    height: 100px;
+}
+
+.successDisplay{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 400px;
+    place-items: center end;
+    padding: 0 20px 10px;
+}
+
+.successDisplay h4{
+    justify-self: center;
+}
+#submit{
+    width: 50%;
+    padding: 5px;
+    background: #00A0C6;
+    border: 1px solid #00A0C6;
+    place-self: center;
+}
+
+.lineAfter2{
+    width: 50px;
+    height: 3px;
+    background:red;
+    position: relative;
+    bottom:15px
+}
+
+.creatives{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 10px;
+    column-gap: 15px;
+}
+
+.creativesText{
+    display: grid;
+    align-self: center;
+}
+
+.creativesImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.creativesImg{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.creativesImg img{
+    width: 100%;
+    height: 150px;
+    opacity: 0.7;
+}
+a.creativesImg img:hover{
+    opacity: 0.9;
+}
+
+.creativesImg h4{
+    position: relative;
+    bottom: 165px;
+    left: 5px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.errorMain{
+    margin-top:15px;
+    text-align: center;
+}
+
+.errorMain a{
+    color: #00A0C6;
+}
+
+
+
+footer{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+
+@media screen and (min-width:700px){
+    .lowerImg1, .lowerImg2, .higherImg1, .higherImg2, .higherImg3{
+        position: relative;
+    }
+    .lowerImg1{
+        top: 80px;
+    }
+    .lowerImg2{
+        top: 30px;
+    }
+    .higherImg1{
+        bottom: 20px;
+    }
+    
+    .higherImg2{
+        bottom: 70px;
+    }
+    
+    .higherImg3{
+        bottom: 40px;
+    }
+    .creativesImages{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 15px;
+    }
+    .creatives{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 0 10px;
+        column-gap: 15px;
+    }
+}
+
+@media screen and (min-width:800px){
+    .jumboSkew{
+        width:100%;
+        display: block;
+        height: 50px;
+        position: relative;
+        bottom: 22px;
+        background: #cccccc;
+        transform: skewY(1.5deg);
+        z-index: -1;
+    }
+
+    .knowHowTab{
+        position: relative;
+        bottom: 80px;
+        background: white;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .creativesImg img{
+        height: 220px;
+    }
+    .creativesImg h4{
+        bottom: 225px;
+        letter-spacing: 2px;
+    }
+    .creatives{
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .jumboContent p,  .jumboContent2 p{
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .jumboContent br, .jumboContent2 br{
+        display: none;
+    }
+
+    .knowHow, .processMain{
+        padding: 20px 0.5vw;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        grid-template-columns: auto 1fr auto;
+        padding: 2px;
+    }
+
+    .jumbotron{
+        padding: 0 5px;
+    }
+    .jumboImg, .jumboImg2{
+        width: 100%;
+        max-width: 180px;
+        height: 250px;
+    }
+
+    .jumboContent p, .jumboContent2 p{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .knowHow{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .processMain{
+        padding: 5px 0;
+    }
+
+    .form, .successDisplay{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+        
+}
+
+@media screen and (max-width:400px){
+    .logo{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:340px){
+    h4.lift{
+        bottom:190px;
+    }
+}
