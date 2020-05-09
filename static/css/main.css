@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 *{
@@ -11,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 a{
@@ -185,6 +184,18 @@ header a{
     width:100%;
 }
 
+.responseMessage{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    position: absolute;
+    bottom: 70%;
+    width:100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: #00A0C6;
+}
+
 .hide{
     display: none;
 }
@@ -223,17 +234,6 @@ textarea{
     height: 100px;
 }
 
-.successDisplay{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 400px;
-    place-items: center end;
-    padding: 0 20px 10px;
-}
-
-.successDisplay h4{
-    justify-self: center;
-}
 #submit{
     width: 50%;
     padding: 5px;
@@ -376,6 +376,7 @@ footer{
         padding: 0 15px;
     }
 }
+
 
 @media screen and (max-width:800px){
     .jumboContent p,  .jumboContent2 p{
