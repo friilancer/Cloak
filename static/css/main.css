@@ -184,16 +184,12 @@ header a{
     width:100%;
 }
 
-.responseMessage{
-    display: grid;
-    grid-template-rows: 1fr auto;
-    place-items: center;
-    position: absolute;
-    bottom: 70%;
-    width:100%;
+.formError{
+    font-size: 12px;
     font-weight: bold;
-    font-size: 30px;
-    color: #00A0C6;
+    color: red;
+    position: relative;
+    top:30px;
 }
 
 .hide{
@@ -209,6 +205,7 @@ header a{
     grid-template-columns: 400px;
     background: white;
     padding: 0 20px 10px;
+    box-shadow: 0 10px 10px #838383;
 }
 
 .form input, textarea{
