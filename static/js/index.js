@@ -1,3 +1,4 @@
+
 document.getElementById('formControlOpen').onclick = () => {
     let form = document.getElementById('formContainer');
     form.classList.remove('hide');
@@ -17,6 +18,7 @@ document.getElementById('submit').onclick = () =>{
     let email= document.getElementById('email').value.trim().toString().toLowerCase();
     let text= document.getElementById('textarea').value.trim().toString();    
     const obj = {name:name, email:email, text:text};
+    console.log(window.innerWidth);
     for(let data in obj){
         if(obj[data].length == 0){
             document.getElementById('formError').textContent = `Please fill in ${data}`;
@@ -28,7 +30,6 @@ document.getElementById('submit').onclick = () =>{
             return;
         }
     }
-
     document.getElementById('name').value = '';
     document.getElementById('email').value='';
     document.getElementById('textarea').value='';
@@ -51,5 +52,5 @@ document.getElementById('submit').onclick = () =>{
         form.classList.add('hide');
         document.body.classList.remove('disable');
         document.getElementById('formError').textContent = '';
-     }, 3000);   
+     }, 2500);   
 }
