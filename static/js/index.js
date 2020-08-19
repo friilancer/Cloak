@@ -1,4 +1,3 @@
-
 document.getElementById('formControlOpen').onclick = () => {
     let form = document.getElementById('formContainer');
     form.classList.remove('hide');
@@ -17,8 +16,8 @@ document.getElementById('submit').onclick = () =>{
     let name= document.getElementById('name').value.trim().toString();
     let email= document.getElementById('email').value.trim().toString().toLowerCase();
     let text= document.getElementById('textarea').value.trim().toString();    
-    const obj = {name:name, email:email, text:text};
-    console.log(window.innerWidth);
+    const obj = {name, email, text};
+    
     for(let data in obj){
         if(obj[data].length == 0){
             document.getElementById('formError').textContent = `Please fill in ${data}`;
@@ -47,7 +46,6 @@ document.getElementById('submit').onclick = () =>{
     }).catch(err => {
         throw err;
     })
-    
     setTimeout(()=>{
         form.classList.add('hide');
         document.body.classList.remove('disable');
